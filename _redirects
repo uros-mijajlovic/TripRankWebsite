@@ -1,0 +1,6 @@
+# Cloudflare Pages redirects
+# Handle SPA-style routing (optional, for clean URLs)
+/privacy    /privacy.html   200
+/terms      /terms.html     200
+/faq        /faq.html       200
+/contact    /contact.html   200

@@ -1,0 +1,389 @@
+/* Variables */
+:root {
+    --primary-teal: #58BBBB;
+    --primary-teal-light: #6BC5C5;
+    --primary-purple: #9D5CFF;
+    --bg-dark: #0D1117;
+    --surface-dark: #1C1C1E;
+    --text-white: #FFFFFF;
+    --text-gray: rgba(255, 255, 255, 0.6);
+    --star-orange: #F5A623;
+}
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    background: #000000;
+    background-image: radial-gradient(ellipse at 50% 0%, #1a3a4a 0%, #0D1117 50%, #000000 100%);
+    background-repeat: no-repeat;
+    background-size: 100% 100vh;
+    color: var(--text-white);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Header */
+.header {
+    padding: 24px 32px;
+}
+
+.logo {
+    height: 48px;
+    width: auto;
+}
+
+/* Hero Section */
+.hero {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 60px 24px;
+    gap: 40px;
+}
+
+/* Tagline */
+.tagline {
+    font-size: 42px;
+    color: var(--primary-teal);
+    font-weight: 700;
+    font-style: italic;
+    max-width: 500px;
+    line-height: 1.2;
+}
+
+/* Store Badges - Stacked */
+.store-badges {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: center;
+}
+
+.store-badge img {
+    height: 56px;
+    width: auto;
+    transition: opacity 0.2s ease;
+}
+
+.store-badge:hover img {
+    opacity: 0.8;
+}
+
+/* Social Proof */
+.social-proof {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-top: 20px;
+}
+
+.rating-score {
+    font-size: 72px;
+    font-weight: 700;
+    line-height: 1;
+}
+
+.rating-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+}
+
+.stars {
+    display: flex;
+    gap: 4px;
+}
+
+.rating-count {
+    font-size: 18px;
+    color: var(--text-gray);
+}
+
+/* Hero Image */
+.hero-image {
+    margin-top: 20px;
+}
+
+.ranks-image {
+    max-width: 300px;
+    width: 100%;
+    height: auto;
+}
+
+/* CTA Text */
+.cta-text {
+    font-size: 24px;
+    font-weight: 500;
+    color: var(--text-white);
+    margin-top: 40px;
+}
+
+/* Footer */
+.footer {
+    background-color: var(--surface-dark);
+    padding: 60px 24px 30px;
+}
+
+.footer-links {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    flex-wrap: wrap;
+}
+
+.footer-column {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.footer-column h4 {
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--text-gray);
+    margin-bottom: 8px;
+}
+
+.footer-column a {
+    color: var(--text-white);
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.2s ease;
+}
+
+.footer-column a:hover {
+    color: var(--primary-teal);
+}
+
+.social-icons {
+    display: flex;
+    gap: 16px;
+}
+
+.social-icons a {
+    color: var(--text-white);
+    transition: color 0.2s ease;
+}
+
+.social-icons a:hover {
+    color: var(--primary-teal);
+}
+
+/* Copyright */
+.copyright {
+    text-align: center;
+    margin-top: 50px;
+    padding-top: 30px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.copyright p {
+    font-size: 13px;
+    color: var(--text-gray);
+}
+
+/* Page Content (for subpages) */
+.page-content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px 24px 80px;
+}
+
+.page-content h1 {
+    font-size: 36px;
+    font-weight: 700;
+    color: var(--primary-teal);
+    margin-bottom: 8px;
+}
+
+.page-content .last-updated {
+    color: var(--text-gray);
+    font-size: 14px;
+    margin-bottom: 40px;
+}
+
+.page-content section {
+    margin-bottom: 32px;
+}
+
+.page-content h2 {
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 12px;
+    color: var(--text-white);
+}
+
+.page-content h3 {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 16px 0 8px;
+    color: var(--text-white);
+}
+
+.page-content p {
+    color: var(--text-gray);
+    line-height: 1.7;
+    margin-bottom: 12px;
+}
+
+.page-content ul {
+    color: var(--text-gray);
+    line-height: 1.7;
+    margin-left: 24px;
+    margin-bottom: 12px;
+}
+
+.page-content li {
+    margin-bottom: 8px;
+}
+
+.page-content a {
+    color: var(--primary-teal);
+    text-decoration: none;
+}
+
+.page-content a:hover {
+    text-decoration: underline;
+}
+
+/* FAQ Page */
+.faq-item {
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: 12px;
+    padding: 24px;
+    margin-bottom: 16px;
+}
+
+.faq-item h2 {
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+.faq-item p {
+    margin-bottom: 0;
+}
+
+/* Contact Page */
+.contact-page .contact-intro {
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+.contact-options {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 24px;
+    margin-bottom: 48px;
+}
+
+.contact-card {
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: 12px;
+    padding: 24px;
+}
+
+.contact-card h2 {
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+.contact-card p {
+    font-size: 14px;
+    margin-bottom: 12px;
+}
+
+.contact-link {
+    color: var(--primary-teal);
+    font-weight: 500;
+}
+
+.social-contact {
+    text-align: center;
+    padding: 40px 0;
+}
+
+.social-contact h2 {
+    margin-bottom: 8px;
+}
+
+.social-contact p {
+    margin-bottom: 20px;
+}
+
+.instagram-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--primary-teal);
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.instagram-link:hover {
+    text-decoration: none;
+    opacity: 0.8;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .tagline {
+        font-size: 32px;
+    }
+
+    .rating-score {
+        font-size: 56px;
+    }
+
+    .cta-text {
+        font-size: 20px;
+    }
+
+    .footer-links {
+        gap: 40px;
+    }
+}
+
+@media (max-width: 480px) {
+    .header {
+        padding: 16px 20px;
+    }
+
+    .logo {
+        height: 40px;
+    }
+
+    .tagline {
+        font-size: 28px;
+    }
+
+    .store-badge img {
+        height: 48px;
+    }
+
+    .rating-score {
+        font-size: 48px;
+    }
+
+    .stars svg {
+        width: 20px;
+        height: 20px;
+    }
+}
