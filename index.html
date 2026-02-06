@@ -78,10 +78,10 @@
 
         <!-- App Store Badges - Stacked -->
         <div class="store-badges">
-            <a href="https://apps.apple.com/us/app/triprank-speed-tracker/id6757245082" class="store-badge" aria-label="Download TripRank on the App Store">
+            <a href="https://apps.apple.com/us/app/triprank-speed-tracker/id6757245082" class="store-badge" aria-label="Download TripRank on the App Store" onclick="openAppStore(event, 'ios')">
                 <img src="assets/app-store.svg" alt="Download on the App Store">
             </a>
-            <a href="https://play.google.com/store/apps/details?id=io.uros.triprank&hl=en" class="store-badge" aria-label="Get TripRank on Google Play">
+            <a href="https://play.google.com/store/apps/details?id=io.uros.triprank&hl=en" class="store-badge" aria-label="Get TripRank on Google Play" onclick="openAppStore(event, 'android')">
                 <img src="assets/google-play.svg" alt="Get it on Google Play">
             </a>
         </div>
@@ -116,7 +116,7 @@
             <div class="footer-column">
                 <h4>Quick Links</h4>
                 <a href="faq.html">FAQ</a>
-                <a href="https://apps.apple.com/us/app/triprank-speed-tracker/id6757245082">Download App</a>
+                <a href="https://apps.apple.com/us/app/triprank-speed-tracker/id6757245082" onclick="openAppStore(event, 'ios')">Download App</a>
                 <a href="contact.html">Contact</a>
             </div>
 
@@ -142,5 +142,20 @@
             <p>&copy; 2026 TripRank. All rights reserved.</p>
         </div>
     </footer>
+
+    <!-- App Store Link Handler - Opens in new tab to work on TikTok -->
+    <script>
+        function openAppStore(event, platform) {
+            event.preventDefault();
+            
+            const urls = {
+                ios: 'https://apps.apple.com/us/app/triprank-speed-tracker/id6757245082?mt=8',
+                android: 'https://play.google.com/store/apps/details?id=io.uros.triprank'
+            };
+            
+            // Open in new tab - this works on TikTok and other platforms
+            window.open(urls[platform], '_blank');
+        }
+    </script>
 </body>
 </html>
