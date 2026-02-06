@@ -4,7 +4,7 @@
  */
 function openAppStore(platform) {
     const urls = {
-        ios: 'https://apps.apple.com/us/app/triprank-speed-tracker/id6757245082?mt=8',
+        ios: 'https://apps.apple.com/app/apple-store/id6757245082?ct=web&mt=8',
         android: 'https://play.google.com/store/apps/details?id=io.uros.triprank'
     };
     
