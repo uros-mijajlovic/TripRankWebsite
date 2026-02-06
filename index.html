@@ -78,12 +78,8 @@
 
         <!-- App Store Badges - Stacked -->
         <div class="store-badges">
-            <a href="https://apps.apple.com/us/app/triprank-speed-tracker/id6757245082" class="store-badge" aria-label="Download TripRank on the App Store" onclick="openAppStore(event, 'ios')">
-                <img src="assets/app-store.svg" alt="Download on the App Store">
-            </a>
-            <a href="https://play.google.com/store/apps/details?id=io.uros.triprank&hl=en" class="store-badge" aria-label="Get TripRank on Google Play" onclick="openAppStore(event, 'android')">
-                <img src="assets/google-play.svg" alt="Get it on Google Play">
-            </a>
+            <img src="assets/app-store.svg" alt="Download on the App Store" class="store-badge" onclick="openAppStore('ios')" style="cursor: pointer;" role="button" aria-label="Download TripRank on the App Store">
+            <img src="assets/google-play.svg" alt="Get it on Google Play" class="store-badge" onclick="openAppStore('android')" style="cursor: pointer;" role="button" aria-label="Get TripRank on Google Play">
         </div>
 
         <!-- Social Proof -->
@@ -116,7 +112,7 @@
             <div class="footer-column">
                 <h4>Quick Links</h4>
                 <a href="faq.html">FAQ</a>
-                <a href="https://apps.apple.com/us/app/triprank-speed-tracker/id6757245082" onclick="openAppStore(event, 'ios')">Download App</a>
+                <a href="#" onclick="openAppStore('ios'); return false;">Download App</a>
                 <a href="contact.html">Contact</a>
             </div>
 
@@ -143,6 +139,7 @@
         </div>
     </footer>
 
+    <!-- App Store Link Handler -->
     <script src="app-store.js"></script>
 </body>
 </html>
